@@ -201,6 +201,8 @@ Pairwise comparisons were then used to compare groups with each other.
 <details>
   <summary>Click to see the explaination on how to use exponentiation to back transform log scale measure for interpretation</summary>
 
+---------------------------------------------------------------------------------------------------------  
+  
   Because the model was fitted on the *log scale*, the estimated differences were later **back-transformed** to the original scale using the exponential function. This makes the results easier to interpret in practical terms.  
   
   **Estimated marginal means** are **model-based** estimates of the average outcome in each group, *adjusted for the other variables* included in the model:   
@@ -214,6 +216,7 @@ Pairwise comparisons were then used to compare groups with each other.
 
 ![](figures/additional_pictures/emmeans_contrast.png) 
 
+---------------------------------------------------------------------------------------------------------
 </details>  
 <br><br>
 
@@ -252,6 +255,8 @@ In terms of relative differences, the attributable rate in low SDI countries was
 | middle - middle_high     | -0.13 (-0.18 – -0.08) | 0.87 (0.83 – 0.92)       | <0.05  |
 | middle - high            | -0.09 (-0.16 – -0.02) | 0.91 (0.85 – 0.98)       | <0.05  |
 | middle_high - high       | 0.04 (-0.02 – 0.10)   | 1.04 (0.98 – 1.10)       | Not sig |
+
+<br>
 
 The estimated marginal means (EMMs) derived from the mixed-effects model differ from the raw group means shown in the boxplots, which is expected given the model structure. While the boxplots represent unadjusted distributions of observed log-transformed death rates across SDI categories, the EMMs reflect model-based estimates that adjust for covariates, including year, and account for clustering at the country level through random effects. As a result, the EMMs represent population-average effects under a balanced design rather than simple averages. 
 
